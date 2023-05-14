@@ -11,4 +11,5 @@ let i=0;j=str.length-1;
 		j--;
 	}
 	return isPalindrome;
+}
 module.exports = palindrome
