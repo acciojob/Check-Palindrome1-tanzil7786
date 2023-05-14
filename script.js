@@ -10,7 +10,7 @@ let i=0;j=str.length-1;
 		i++;
 		j--;
 	}
-	let result= isPalindrome ? "true" : "false"
 	return result;
 }
+return;
 module.exports = palindrome
