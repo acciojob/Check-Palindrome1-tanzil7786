@@ -1,16 +1,13 @@
 // complete the given function
 
 function palindrome(str){
-	str.toLowerCase();
-	let isPalindrome=true;
-let i=0;j=str.length-1;
-	while(i<=j && isPalindrome){
-		if(str[i]!==str[j]){
-			isPalindrome=false;
+	let isPalindrome=str.replace(/[^a-zA-Z0-9]/g,'').toLowerCase();
+	let len=isPalindrome.length;
+	for(let i=0;i<mMath.floor(length/2);i++){
+		if(isPalindrome[i]!==isPalindrome[length-1-i]){
+			return false;
 		}
-		i++;
-		j--;
 	}
-	return isPalindrome;
+	return true;
 }
 module.exports = palindrome
